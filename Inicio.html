@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+	
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+	
+	<meta charset="utf-8">
+	<title>Inicio</title>
+	<link href="Inicio.css" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	  <style>
+	  body {
+		  font: 20px Montserrat, sans-serif;
+		  line-height: 1.8;
+		  color: #555555;
+		  background: #E3CDCD;
+	  }
+   </style>
+	
+</head>
+	
+<body class="align">
+	
+	<nav class="navbar" style="background-color: #EE80AA;">
+			<a class="navbar-brand" href="#">
+    			<div class="float-disable"><img src="Logo.jpg" alt="Logo" style="width:35px;" class="img-responsive img-circle margin"></div>
+  			</a>
+		<div class="container-fluid">
+
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="Inicio.html">Torontella Cake & Coffe</a>
+		</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;Inicio</a></li>
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-refresh"></span>&nbsp;Actualizar<span class="caret"></span></a>
+					<ul class="dropdown-menu" style="background-color: #EE80AA;">
+						<li><a href="NuevoUsuario.html"><span class="glyphicon glyphicon-plus"></span>&nbsp;Incluir Usuario</a></li>
+						<li><a href="ModificarProducto.html"><span class="glyphicon glyphicon-pencil"></span>&nbsp;Modificar Productos</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Consultar<span class="caret"></span></a>
+					<ul class="dropdown-menu" style="background-color: #EE80AA;">
+						<li><a href="#"><i class="fas fa-cookie-bite"></i>&nbsp;Productos</a></li>
+						<li><a href="OPActivas.html"><i class="fa fa-truck"></i>&nbsp;Órdenes de Producción</a></li>
+						<li><a href="OCActivas.html"><i class="fa fa-shopping-cart"></i>&nbsp;Órdenes de Compras</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><div class="float-disable vcenter"><input class="form-control" type="text" placeholder="Buscar..." name="search"></a></div></li>
+     		    <li><div class="float-disable vcenter"><button class="botonbuscar" type="submit"><i class="fa fa-search"></i></button></div></li>
+     		    <li><div class="float-disable vcenter"><button class="botonbuscar" data-toggle="modal" data-target="#exampleModal">
+				  <span class="glyphicon glyphicon-comment"><div class="nronotificaciones">4</div></span>
+				</button>
+			</div>
+				</li>
+				<li>
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Gabriel<span class="caret"></span></a>
+					<ul class="dropdown-menu" style="background-color: #EE80AA;">
+						<li><a class="dropdown-item" href="Inicio.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Ajustes</a></li>
+    					<li class="divider" style="background-color: #d37297; height:1px;"></li>
+    					<li><a href="Login.html"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesión</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="bg-5"><i>Último Acceso: 23/06/2018 - 10:00 am</i></div>
+	</nav>
+	
+
+	<!-- First Container -->
+<div class="container-fluid text-center" >
+  <h3 class="margin">Bienvenido, Gabriel</h3>
+  <img src="Logo.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250" height="250">
+  <h5><b>Tipo de Usuario:</b> <i>Socio</i></h5>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Notificaciones
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></h5>
+        </button>
+      </div>
+      <div class="modal-body">
+		          <button type="button" class="list-group-item list-group-item-light" href="#">7 órdenes de producción nuevas
+				  <button type="button" class="list-group-item list-group-item-light" href="#">4 órdenes de compra nuevas
+				  <button type="button" class="list-group-item list-group-item-light" href="#">2 OP detenidas (Materia Prima)
+				  <button type="button" class="list-group-item list-group-item-light" href="#">3 OP reanudadas (Materia Prima adquirida)
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Third Container (Grid) -->
+<br>
+<div class="container-fluid bg-2 text-center"><p style="font-size:26px">¿Qué deseas hacer?</p></div>
+<div class="container-fluid bg-3 text-center">    
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="cajabotones"><p>Incluir Nuevos Usuarios</p>
+		<br>
+      <img src="Incluir.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="150" height="150">
+		<form action="NuevoUsuario.html" method="POST" class="form login">
+			<button class="btn-lg">Incluir</button>
+			<br><br>
+ 		</form>
+ 	</div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="cajabotones"><p>Consultar Órdenes de Producción</p><br>
+      <img src="Consultar.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="150" height="150">
+      <form action="OPActivas.html" method="POST" class="form login">
+			<button class="btn-lg">Consultar</button>
+			<br><br>
+ 		</form>
+ 	</div>
+    </div>
+    <div class="col-sm-4"> 
+     <div class="cajabotones"><p>Consultar Órdenes de Compra</p>
+		<br>
+      <img src="Finalizar.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="150" height="150">
+      <form action="OCActivas.html" method="POST" class="form login">
+			<button class="btn-lg">Consultar</button>
+			<br><br>	
+ 		</form>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="cajabotones"><p>Actualizar Productos</p>
+		<br>
+      <img src="ActualizarProductos.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="150" height="150">
+		<form action="ModificarProducto.html" method="POST" class="form login">
+			<button class="btn-lg">Actualizar</button>
+			<br>
+ 		</form>
+ 	</div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="cajabotones"><p>Configurar tu Usuario</p><br>
+      <img src="AjustesUsuario.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="150" height="150">
+      <form action="NuevoUsuario.html" method="POST" class="form login">
+			<button class="btn-lg">Ajustes</button>
+			<br>
+ 		</form>
+ 	</div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="cajabotones"><p>Cerrar sesión</p>
+		<br>
+      <img src="CerrarSesion.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="150" height="150">
+      <form action="Login.html" method="POST" class="form login">
+			<button class="btn-lg">Cerrar Sesión</button>
+			<br>
+ 		</form>
+ 	</div>
+    </div>
+	</div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Sistema Hecho Por <a href="https://www.facebook.com/EcoTecnoDCyt/">ECOTECNO</a></p> 
+</footer>
+</body>
+</html>

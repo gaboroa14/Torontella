@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<title>Modificar Producto</title>
+	<link href="ModificarProducto.css" rel="stylesheet" type="text/css">
+	<link href="Inicio.css" rel="stylesheet" type="text/css">
+
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	  <style>
+	  body {
+		  font: 20px Montserrat, sans-serif;
+		  line-height: 1.8;
+		  color: #555555;
+		  background: #E3CDCD;
+	  }
+   </style>
+	
+</head>
+	
+<body class="align">
+	
+	<nav class="navbar" style="background-color: #EE80AA;">
+			<a class="navbar-brand" href="#">
+    			<div class="float-disable"><img src="Logo.jpg" alt="Logo" style="width:35px;" class="img-responsive img-circle margin"></div>
+  			</a>
+		<div class="container-fluid">
+
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="Inicio.html">Torontella Cake & Coffe</a>
+		</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Inicio</a></li>
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Consultar<span class="caret"></span></a>
+					<ul class="dropdown-menu" style="background-color: #EE80AA;">
+						<li><a href="#">Productos</a></li>
+						<li><a href="OPActivas.html">Órdenes de Producción</a></li>
+						<li><a href="OCActivas.html">Órdenes de Compras</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><div class="float-disable vcenter"><input class="form-control" type="text" placeholder="Buscar..." name="search"></a></div></li>
+     		    <li><div class="float-disable vcenter"><button class="botonbuscar" type="submit"><i class="fa fa-search"></i></button></div></li>
+     		    <li><div class="float-disable vcenter"><button class="botonbuscar" data-toggle="modal" data-target="#exampleModal">
+				  <span class="glyphicon glyphicon-comment"><div class="nronotificaciones">4</div></span>
+				</button>
+			</div>
+				</li>
+				<li><a href="Login.html"><span class="glyphicon glyphicon-user"></span>Cerrar Sesión</a></li></a>
+				
+			</ul>
+		</div>
+		<div class="bg-5"><i>Último Acceso: 23/06/2018 - 10:00 am</i></div>
+	</nav>
+	
+
+	<!-- First Container -->
+	<div class="row">
+		<div class="col-sm-1"><p style="margin: 15px"><a href="Inicio.html"><img src="Atras.png" alt="Volver" style="width:35px;" class="img-responsive img-circle margin"></a></div>
+		<div class="col-sm-10 text-center h2">Modificar Producto</div></p>
+	</div>
+
+<div class="container-fluid bg-3 text-center">
+	<div class="col-sm-6">
+ 		<i><h2>Cheesecake</h2></i>
+ 		<div class="row">
+		     	<div class="col-sm-3">
+     		 		<div class="form-group">
+		     			<div class="cajabotones"><label for="exampleInputEmail1">Código:</label></div>
+		     		</div>
+		    	</div>
+		    	<div class="col-sm-9">
+    		 		<div class="form-group">
+    		 			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Código del artículo.">
+    		 		</div>
+		    	</div>
+		</div>
+ 		<div class="row">
+     	<div class="col-sm-3">
+		 		<div class="form-group">
+     			<div class="cajabotones"><label for="exampleInputEmail1">Nombre:</label></div>
+     		</div>
+    	</div>
+    	<div class="col-sm-9">
+	 		<div class="form-group">
+	 			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre del producto.">
+	 		</div>
+    	</div>
+		</div>
+		 		<div class="row">
+     	<div class="col-sm-3">
+		 		<div class="form-group">
+     			<div class="cajabotones"><label for="exampleInputEmail1">Descripción:</label></div>
+     		</div>
+    	</div>
+    	<div class="col-sm-9">
+	 		<div class="form-group">
+	 			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Breve descripción del producto.">
+	 		</div>
+    	</div>
+		</div>
+		<div class="row">
+     	<div class="col-sm-3">
+		 		<div class="form-group">
+     			<div class="cajabotones"><label for="exampleInputEmail1">Receta:</label></div>
+     		</div>
+    	</div>
+    	<div class="col-sm-9">
+	 		<div class="form-group">
+	 			<textarea  class="form-control" id="exampleTextarea" rows="3" placeholder="Ingredientes para elaborar el producto."></textarea>
+	 		</div>
+    	</div>
+		</div>
+				<div class="row">
+     	<div class="col-sm-3">
+		 		<div class="form-group">
+     			<div class="cajabotones"><label for="exampleInputEmail1">Preparación:</label></div>
+     		</div>
+    	</div>
+    	<div class="col-sm-9">
+	 		<div class="form-group">
+	 			<textarea  class="form-control" id="exampleTextarea" rows="7" placeholder="Pasos para elaborar el producto."></textarea>
+	 		</div>
+    	</div>
+		</div>
+ 	</div>
+ 	<div class="col-sm-6">
+ 		<br>
+ 		  <img src="Cheesecake.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="300" height="300"><br>
+ 		  <button class="btn-lg">Cambiar Imagen</button>
+ 	</div>
+ 	<br> .
+</div>
+
+<div class="container-fluid bg-2 text-right">
+<p style="margin: 5px">
+  <button class="btn-el">Eliminar Producto</button>
+  <button class="btn-lg">Guardar Cambios</button>
+</p>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Sistema Hecho Por <a href="https://www.facebook.com/EcoTecnoDCyt/">ECOTECNO</a></p> 
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Notificaciones
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></h5>
+        </button>
+      </div>
+      <div class="modal-body">
+		          <button type="button" class="list-group-item list-group-item-light" href="#">7 órdenes de producción nuevas
+				  <button type="button" class="list-group-item list-group-item-light" href="#">4 órdenes de compra nuevas
+				  <button type="button" class="list-group-item list-group-item-light" href="#">2 OP detenidas (Materia Prima)
+				  <button type="button" class="list-group-item list-group-item-light" href="#">3 OP reanudadas (Materia Prima adquirida)
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
