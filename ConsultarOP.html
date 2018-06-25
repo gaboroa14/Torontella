@@ -2,7 +2,7 @@
 <head>
 	
 	<meta charset="utf-8">
-	<title>Consultar Orden de Compra - Torontella Cake & Coffee</title>
+	<title>Consultar Orden de Producción - Torontella Cake & Coffee</title>
 	<link href="ConsultarOC.css" rel="stylesheet" type="text/css">
 	<link href="Inicio.css" rel="stylesheet" type="text/css">
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -87,7 +87,7 @@
 <div class="container-fluid text-center" id="tabla">
 	<div class="row">
 		<div class="col-sm-1"><p style="margin: 15px"><a href="Inicio.html"><img src="Atras.png" alt="Volver" style="width:35px;" class="img-responsive img-circle margin"></a></div>
-		<div class="col-sm-10 text-center h2">Consultar Orden de Compra</div></p>
+		<div class="col-sm-10 text-center h2">Consultar Orden de Producción</div></p>
 	</div>
 </div>
 	
@@ -104,16 +104,19 @@
 
 <div class="row">
 	<div class="col-sm-3 col-sm-offset-1">
-	  <label for="textfield2"><div class="cajabotones">Ingrediente o producto:</div></label>
+	  <label for="textfield2"><div class="cajabotones">Producto:</div></label>
 	</div>
 	<div class="col-sm-offset-0 col-sm-6">
 	  <input type="text" class="form-control" name="textfield2" id="textfield2" placeholder="Ingrediente o producto">
+	</div>
+	<div class="col-sm-offset-0 col-sm-1">
+	  <input type="button" name="button" id="button" class="btn-lg" value="Ver Detalles">
 	</div>
 </div>
 	
 <div class="row">
 	<div class="col-sm-offset-1 col-sm-3">
-	  <label for="textfield3"><div class="cajabotones">Fecha de Inicio:</div></label>
+	  <label for="textfield3"><div class="cajabotones">Cantidad:</div></label>
 	</div>
 	<div class="col-sm-offset-0 col-sm-6">
 	  <input type="text" class="form-control" name="textfield3" id="textfield3" placeholder="Fecha de Inicio">
@@ -122,14 +125,12 @@
 
 <div class="row">
 	<div class="col-sm-offset-1 col-sm-3">
-	  <label for="textfield4"><div class="cajabotones">Proveedor:</div></label>
+	  <label for="textfield4"><div class="cajabotones">Fecha de Inicio:</div></label>
 	</div>
 	<div class="col-sm-offset-0 col-sm-6">
 	  <input type="text" class="form-control" name="textfield4" id="textfield4" placeholder="Nombre del proveedor">
 	</div>
-	<div class="col-sm-offset-0 col-sm-1">
-	  <input type="button" name="button" id="button" class="btn-lg" value="Ver Detalles">
-	</div>
+
 </div>
 
 <br>
@@ -155,10 +156,10 @@
         </button>
       </div>
       <div class="modal-body">
-		          <button type="button" class="list-group-item list-group-item-light" href="#">7 órdenes de producción nuevas
-				  <button type="button" class="list-group-item list-group-item-light" href="#">4 órdenes de compra nuevas
+		          <button type="button" class="list-group-item list-group-item-light" href="OPActivas.html">7 órdenes de producción nuevas
+				  <button type="button" class="list-group-item list-group-item-light" href="OCActivas.html">4 órdenes de compra nuevas
 				  <button type="button" class="list-group-item list-group-item-light" href="#">2 OP detenidas (Materia Prima)
-				  <button type="button" class="list-group-item list-group-item-light" href="#">3 OP reanudadas (Materia Prima adquirida)
+				  <button type="button" class="list-group-item list-group-item-light" href="OPActivas.html">3 OP reanudadas (Materia Prima adquirida)
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
@@ -198,7 +199,7 @@ function bootstrap_alert(elem, message, timeout) {
       $(elem).alert('close');
     }, timeout);    
   }
- setTimeout(function(){window.location.href="OCActivas.html"},timeout);
+ setTimeout(function(){window.location.href="OPActivas.html"},timeout);
 };
 </script>
 

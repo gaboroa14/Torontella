@@ -25,7 +25,7 @@
 	
 <body class="align">
 	
-	<nav class="navbar" style="background-color: #EE80AA;">
+<nav class="navbar" style="background-color: #EE80AA;">
 			<a class="navbar-brand" href="#">
     			<div class="float-disable"><img src="Logo.jpg" alt="Logo" style="width:35px;" class="img-responsive img-circle margin"></div>
   			</a>
@@ -33,42 +33,53 @@
 
 		<div class="navbar-header">
 		  <a class="navbar-brand" href="Inicio.html">Torontella Cake & Coffe</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbartorontella">
+            <i class="fa fa-bars img-responsive img-circle bg-5" style="color:white;"></i>
+      </button>
+
 		</div>
-			<ul class="nav navbar-nav">
+    <div class="collapse navbar-collapse text-center" id="navbartorontella">
+      <ul class="nav navbar-nav">
 				<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;Inicio</a></li>
-				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-refresh"></span>&nbsp;Actualizar<span class="caret"></span></a>
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-refresh" style="color: white;"></span>&nbsp;Actualizar<span class="caret"></span></a>
 					<ul class="dropdown-menu" style="background-color: #EE80AA;">
-						<li><a href="NuevoUsuario.html"><span class="glyphicon glyphicon-plus"></span>&nbsp;Incluir Usuario</a></li>
-						<li><a href="ModificarProducto.html"><span class="glyphicon glyphicon-pencil"></span>&nbsp;Modificar Productos</a></li>
+						<li><a href="NuevoUsuario.html"><span class="glyphicon glyphicon-plus"style="color: white;"></span>&nbsp;Incluir Usuario</a></li>
+						<li><a href="ModificarProducto.html"><span class="glyphicon glyphicon-pencil"style="color: white;"></span>&nbsp;Modificar Productos</a></li>
 					</ul>
 				</li>
 				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Consultar<span class="caret"></span></a>
 					<ul class="dropdown-menu" style="background-color: #EE80AA;">
-						<li><a href="#"><i class="fas fa-cookie-bite"></i>&nbsp;Productos</a></li>
-						<li><a href="OPActivas.html"><i class="fa fa-truck"></i>&nbsp;Órdenes de Producción</a></li>
-						<li><a href="OCActivas.html"><i class="fa fa-shopping-cart"></i>&nbsp;Órdenes de Compras</a></li>
+						<li><a href="#"><i class="fas fa-cookie-bite"style="color: white;"></i>&nbsp;Productos</a></li>
+						<li><a href="OPActivas.html"><i class="fa fa-truck"style="color: white;"></i>&nbsp;Órdenes de Producción</a></li>
+						<li><a href="OCActivas.html"><i class="fa fa-shopping-cart"style="color: white;"></i>&nbsp;Órdenes de Compras</a></li>
 					</ul>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><div class="float-disable vcenter"><input class="form-control" type="text" placeholder="Buscar..." name="search"></a></div></li>
-     		    <li><div class="float-disable vcenter"><button class="botonbuscar" type="submit"><i class="fa fa-search"></i></button></div></li>
-     		    <li><div class="float-disable vcenter"><button class="botonbuscar" data-toggle="modal" data-target="#exampleModal">
-				  <span class="glyphicon glyphicon-comment"><div class="nronotificaciones">4</div></span>
-				</button>
-			</div>
+				<li><div class="float-disable vcenter"><div class="flexContainer">
+    				<input class="form-control" type="text" placeholder="Buscar..." name="search">
+  					<button class="botonbuscar" type="submit"><i class="fa fa-search" style="color:white;"></i></button>
+				</div></a></div></li>
+     		    <li>
 				</li>
 				<li>
+					<div class="float-disable vcenter"><button class="botonbuscar" data-toggle="modal" data-target="#exampleModal">
+					<span class="glyphicon glyphicon-comment" style="color:white;"><div class="nronotificaciones">4</div></span>
+					</button>
+				</div>
 				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Gabriel<span class="caret"></span></a>
 					<ul class="dropdown-menu" style="background-color: #EE80AA;">
-						<li><a class="dropdown-item" href="Inicio.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Ajustes</a></li>
+						<li><a class="dropdown-item" href="Inicio.html"><span class="glyphicon glyphicon-home"style="color: white;"></span> Inicio</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-wrench"style="color: white;"></span> Ajustes</a></li>
     					<li class="divider" style="background-color: #d37297; height:1px;"></li>
-    					<li><a href="Login.html"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesión</a></li>
+    					<li><a href="Login.html"><span class="glyphicon glyphicon-log-out"style="color: white;"></span> Cerrar Sesión</a></li>
 					</ul>
 				</li>
 			</ul>
 		</div>
+	</li>
+</ul>
+</div>
 		<div class="bg-5"><i>Último Acceso: 23/06/2018 - 10:00 am</i></div>
 	</nav>
 	
