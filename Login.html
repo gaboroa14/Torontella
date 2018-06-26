@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Inicio de Sesion - Torontella Cake & Coffee</title>
-	<link href="IniciodeSesion.css" rel="stylesheet" type="text/css">
+	<link href="TorontellaMaster.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -33,10 +33,8 @@ a{
 
 <body class="align">
 		
-    <div class="grid login2" >
-		
-    <div id="exito" class="alert alert-danger fade in" style="display:none"></div>
 
+    <div class="grid loginIni" >
 		<div align="center">
 			<img src="Logo.jpg">
 			<br>
@@ -53,8 +51,8 @@ a{
           <input id="login__password" type="password" name="password" class="form__input" placeholder="Contraseña" required>
         </div>
 
-        <div class="form__field" align="center">
-			<input type="submit" value="Iniciar Sesión" onclick="login()">
+        <div class="form__field">
+			<input type="button" value="Iniciar Sesión" onclick="login()" align="right">
         </div>
 
       </form>
@@ -72,14 +70,30 @@ a{
     } else if (document.getElementById("login__username").value=="albert"){
       window.location.href="InicioCoc.html"
     } else {
-        $(#exito).show().html('<div class="danger"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><span>Usuario inválido.</span></div>');
-        setTimeout(function() { 
-        $(#exito).alert('close');
-      }, 5000);
-    }
+        $('#errorlogin').modal('show');
+      }
   };
 </script>
 
-	
+<!-- Guardar Cambios -->
+<div class="modal fade" id="errorlogin" tabindex="-1" role="dialog" aria-labelledby="guardarCambios" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center" id="cabeceraerrorlogin">
+        <h5 class="modal-title" id="errorlogin"><strong>Error.</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></h5>
+        </button>
+      </div>
+      <div class="modal-body">
+              <h5>Usuario inválido.</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

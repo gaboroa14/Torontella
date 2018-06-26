@@ -1,34 +1,31 @@
 <!doctype html>
 <html>
 <head>
+	
 	<meta charset="utf-8">
-	<title>Incluir Usuario - Torontella Cake & Coffee</title>
-	<link href="NuevoUsuario.css" rel="stylesheet" type="text/css">
-		<link href="Inicio.css" rel="stylesheet" type="text/css">
-	  	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Modificar Producto - Torontella Cake & Coffee</title>
+	<link href="ModificarProducto.css" rel="stylesheet" type="text/css">
+	<link href="Inicio.css" rel="stylesheet" type="text/css">
 	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	
-	<style>
-
-		body {
+	  <style>
+	  body {
 		  font: 20px Montserrat, sans-serif;
 		  line-height: 1.8;
 		  color: #555555;
 		  background: #E3CDCD;
-		}
-
-	</style>
-</head>
-
-
+	  }
+   </style>
 	
-<body>
+</head>
+	
+<body class="align">
 	
 	<nav class="navbar" style="background-color: #EE80AA;">
 			<a class="navbar-brand" href="#">
@@ -48,8 +45,8 @@
 				<li><a href="Inicio.html"><span class="glyphicon glyphicon-home"></span>&nbsp;Inicio</a></li>
 				<li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-refresh" style="color: #FFF;"></span>&nbsp;Actualizar<span class="caret"></span></a>
 					<ul class="dropdown-menu" style="background-color: #EE80AA;">
-						<li class="active"><a href="NuevoUsuario.html"><span class="glyphicon glyphicon-plus"style="color: #000;"></span>&nbsp;Incluir Usuario</a></li>
-						<li><a href="ModificarProducto.html"><span class="glyphicon glyphicon-pencil"style="color: #000;"></span>&nbsp;Modificar Productos</a></li>
+						<li><a href="NuevoUsuario.html"><span class="glyphicon glyphicon-plus"style="color: #000;"></span>&nbsp;Incluir Usuario</a></li>
+						<li class="active"><a href="ModificarProducto.html"><span class="glyphicon glyphicon-pencil"style="color: #000;"></span>&nbsp;Modificar Productos</a></li>
 					</ul>
 				</li>
 				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Consultar<span class="caret"></span></a>
@@ -90,65 +87,106 @@
 	
 <div id="exito" class="alert alert-danger fade in" style="display:none"></div>
 
-
+	<!-- First Container -->
 	<div class="row">
-		<div class="col-sm-1"><p style="margin: 15px"><a href="Inicio.html"><img src="Atras.png" alt="Volver" style="width:35px;" class="img-responsive img-circle margin"></a></div>
-		<div class="col-sm-10 text-center h2">Incluir Usuario</div></p>
+		<div class="col-sm-1"><p style="margin: 15px"><a href="Productos.html"><img src="Atras.png" alt="Volver" style="width:35px;" class="img-responsive img-circle margin"></a></div>
+		<div class="col-sm-10 text-center h2">Modificar Producto</div></p>
 	</div>
 
-	<div class="col-lg-4 login2" >
-		
-		<div align="center" style="color:#555555;">
-		  <br>
+<div class="container-fluid bg-3 text-center">
+	<div class="col-sm-6">
+ 		<i><h2>Torta de Zanahoria</h2></i>
+ 		<div class="row">
+		     	<div class="col-sm-3">
+     		 		<div class="form-group">
+		     			<div class="cajabotones"><label for="exampleInputEmail1">Código:</label></div>
+		     		</div>
+		    	</div>
+		    	<div class="col-sm-9">
+    		 		<div class="form-group">
+    		 			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Código del artículo." value="TRZHR10" disabled>
+    		 		</div>
+		    	</div>
 		</div>
-      <form action="Inicio.html" method="POST" class="form login">
+ 		<div class="row">
+     	<div class="col-sm-3">
+		 		<div class="form-group">
+     			<div class="cajabotones"><label for="exampleInputEmail1">Nombre:</label></div>
+     		</div>
+    	</div>
+    	<div class="col-sm-9">
+	 		<div class="form-group">
+	 			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre del producto." value="Torta de Zanahoria">
+	 		</div>
+    	</div>
+		</div>
+		 		<div class="row">
+     	<div class="col-sm-3">
+		 		<div class="form-group">
+     			<div class="cajabotones"><label for="exampleInputEmail1">Descripción:</label></div>
+     		</div>
+    	</div>
+    	<div class="col-sm-9">
+	 		<div class="form-group">
+	 			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Breve descripción del producto." value="Deliciosa torta con fresca y dulce zanahoria.">
+	 		</div>
+    	</div>
+		</div>
+		<div class="row">
+     	<div class="col-sm-3">
+		 		<div class="form-group">
+     			<div class="cajabotones"><label for="exampleInputEmail1">Receta:</label></div>
+     		</div>
+    	</div>
+    	<div class="col-sm-9">
+	 		<div class="form-group">
+	 			<textarea  class="form-control" id="exampleTextarea" rows="3" placeholder="Ingredientes para elaborar el producto.">
+2 tazas de harina
+½ cucharada de polvo para hornear
+1 pizca de sal
+4 huevos
+1 taza de aceite
+1 ½ tazas de azúcar
+250 gramos de zanahoria, rallada
+Crema batida, para decorar</textarea>
+	 		</div>
+    	</div>
+		</div>
+				<div class="row">
+     	<div class="col-sm-3">
+		 		<div class="form-group">
+     			<div class="cajabotones"><label for="exampleInputEmail1">Preparación:</label></div>
+     		</div>
+    	</div>
+    	<div class="col-sm-9">
+	 		<div class="form-group">
+	 			<textarea  class="form-control" id="exampleTextarea" rows="7" placeholder="Pasos para elaborar el producto.">
+Precalienta el horno a 180 ºC y enharina un molde para torta. En un tazón mediano, tamiza la harina, el polvo para hornear y la sal; reserva. Licúa los huevos, el aceite, el azúcar y la zanahoria rallada hasta que obtengas una consistencia uniforme, luego vierte en el tazón con la mezcla de harina y revuelve hasta que los ingredientes se incorporen.
+Coloca la mezcla en el molde preparado y hornea por 50 minutos. Retira la torta del horno y déjala reposar en el molde por 10 minutos, luego desmolda, espolvorea un poco de azúcar pulverizada y termina de decorar con crema batida.</textarea>
+	 		</div>
+    	</div>
+		</div>
+ 	</div>
+ 	<div class="col-sm-6">
+ 		<br>
+ 		  <img src="Producto2.jpeg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="300" height="300"><br>
+ 		  <button class="btn-lg">Cambiar Imagen</button>
+ 	</div>
+ 	<br> .
+</div>
 
-        <div class="form__field">
-          <label for="login__username"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg><span class="hidden">Username</span></label>
-          <input id="login__username" type="text" name="username" class="form__input" placeholder="Usuario" required>
-        </div>
+<div class="container-fluid bg-2 text-right">
+<p style="margin: 5px">
+  <input type="button" class="btn-el" data-toggle="modal" data-target="#guardarCambios" value="Eliminar Producto">
+  <input type="button" class="btn-lg" data-toggle="modal" data-target="#guardarCambios" value="Guardar Cambios">
+</p>
+</div>
+</div>
 
-        <div class="form__field">
-          <label for="login__password"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg><span class="hidden">Password</span></label>
-          <input id="login__password" type="password" name="password" class="form__input" placeholder="Contraseña" required>
-        </div>
-		
-		<div class="form__field">
-          <label for="login__password"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg><span class="hidden">Password</span></label>
-          <input id="login__password" type="password" name="password" class="form__input" placeholder="Confirme contraseña" required>
-        </div>
-		  
-	
-		<div align="center">
-			 <label class="radio-inline">
-			  <input type="radio" name="optradio"> Socia</label> 
-			<label class="radio-inline">
-			  <input type="radio" name="optradio"> Cocinera</label>
-			<label class="radio-inline">
-			  <input type="radio" name="optradio"> Encargada </label>
-	  </div>
-
-		<div class="form__field">
-          <label for="login__text"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg><span class="hidden">Text</span></label>
-          <input id="login__text" type="text" name="text" class="form__input" placeholder="Pregunta de Seguridad" required>
-        </div>
-		  
-		<div class="form__field">
-          <label for="login__respuesta"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg><span class="hidden">Respuesta</span></label>
-          <input id="login__respuesta" type="password" name="respuesta" class="form__input" placeholder="Respuesta" required>
-        </div>
-		  
-        <div class="form__field" align="center">
-        	<div class="col-sm-4"></div>
-			<input type="button" class="btn-lg" data-toggle="modal" data-target="#guardarCambios" value="Incluir Usuario">
-        </div>
-
-      </form>
-
-
-    </div>
-    
-    <svg xmlns="http://www.w3.org/2000/svg" class="icons"><symbol id="arrow-right" viewBox="0 0 1792 1792"><path d="M1600 960q0 54-37 91l-651 651q-39 37-91 37-51 0-90-37l-75-75q-38-38-38-91t38-91l293-293H245q-52 0-84.5-37.5T128 1024V896q0-53 32.5-90.5T245 768h704L656 474q-38-36-38-90t38-90l75-75q38-38 90-38 53 0 91 38l651 651q37 35 37 90z"/></symbol><symbol id="lock" viewBox="0 0 1792 1792"><path d="M640 768h512V576q0-106-75-181t-181-75-181 75-75 181v192zm832 96v576q0 40-28 68t-68 28H416q-40 0-68-28t-28-68V864q0-40 28-68t68-28h32V576q0-184 132-316t316-132 316 132 132 316v192h32q40 0 68 28t28 68z"/></symbol><symbol id="user" viewBox="0 0 1792 1792"><path d="M1600 1405q0 120-73 189.5t-194 69.5H459q-121 0-194-69.5T192 1405q0-53 3.5-103.5t14-109T236 1084t43-97.5 62-81 85.5-53.5T538 832q9 0 42 21.5t74.5 48 108 48T896 971t133.5-21.5 108-48 74.5-48 42-21.5q61 0 111.5 20t85.5 53.5 62 81 43 97.5 26.5 108.5 14 109 3.5 103.5zm-320-893q0 159-112.5 271.5T896 896 624.5 783.5 512 512t112.5-271.5T896 128t271.5 112.5T1280 512z"/></symbol></svg>
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Sistema Hecho Por <a href="https://www.facebook.com/EcoTecnoDCyt/">ECOTECNO</a></p> 
+</footer>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -178,17 +216,38 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="guardarCambios">Confirme la inclusión.
+        <h5 class="modal-title" id="guardarCambios">Confirme la modificación.
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span></h5>
         </button>
       </div>
       <div class="modal-body">
-		          <div class="list-group-item list-group-item-light" href="#">¿Desea incluir el usuario?</textarea>
+		          <div class="list-group-item list-group-item-light" href="#">¿Desea modificar el producto?</textarea>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-        <a href="Inicio.html"><button type="button" class="btn btn-primary" data-dismiss="modal" onclick="bootstrap_alert('#exito','El usuario se ha incluido exitosamente.',2000)">Sí</button></a>
+        <a href="Inicio.html"><button type="button" class="btn btn-primary" data-dismiss="modal" onclick="bootstrap_alert('#exito','El producto se ha modificado exitosamente.',2000)">Sí</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Eliminar Producto -->
+<div class="modal fade" id="eliminarProducto" tabindex="-1" role="dialog" aria-labelledby="eliminarProducto" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="eliminarProducto">Confirme la modificación.
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></h5>
+        </button>
+      </div>
+      <div class="modal-body">
+		          <div class="list-group-item list-group-item-light" href="#">¿Desea modificar el producto?</textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        <a href="Inicio.html"><button type="button" class="btn btn-primary" data-dismiss="modal" onclick="bootstrap_alert('#exito','El producto se ha modificado exitosamente.',2000)">Sí</button></a>
       </div>
     </div>
   </div>
@@ -204,7 +263,7 @@ function bootstrap_alert(elem, message, timeout) {
       $(elem).alert('close');
     }, timeout);    
   }
- setTimeout(function(){window.location.href="Inicio.html"},timeout);
+ setTimeout(function(){window.location.href="Productos.html"},timeout);
 };
 </script>
 
